@@ -21,13 +21,21 @@ compileJava {
 // =======================================
 
 buildscript {
-  repositories {
-    jcenter()
-  }
+    repositories {
+        maven {
+            url "http://artifactory:8081/artifactory/mavencentral"
+            allowInsecureProtocol = true
+        }
+        mavenCentral()
+    }
 }
 
 repositories {
-    jcenter()
+    maven {
+        url "http://artifactory:8081/artifactory/mavencentral"
+        allowInsecureProtocol = true
+    }
+    mavenCentral()
 }
 
 dependencies {
