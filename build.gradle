@@ -22,12 +22,18 @@ compileJava {
 
 buildscript {
     repositories {
-        jcenter().setAllowInsecureProtocol(true)
+        maven {
+            url "http://artifactory:8081/artifactory/jcenter"
+            allowInsecureProtocol = true
+        }
     }
 }
 
 repositories {
-    jcenter().setAllowInsecureProtocol(true)
+    maven {
+        url "http://artifactory:8081/artifactory/jcenter"
+        allowInsecureProtocol = true
+    }
 }
 
 dependencies {
