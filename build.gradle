@@ -24,7 +24,7 @@ buildscript {
     repositories {
         maven {
             url "http://artifactory:8081/artifactory/jcenter"
-            allowInsecureProtocol = true
+            setAllowInsecureProtocol(true)
         }
         jcenter()
     }
@@ -33,7 +33,7 @@ buildscript {
 repositories {
     maven {
         url "http://artifactory:8081/artifactory/jcenter"
-        allowInsecureProtocol = true
+        setAllowInsecureProtocol(true)
     }
     jcenter()
 }
