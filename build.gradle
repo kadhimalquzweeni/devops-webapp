@@ -24,6 +24,10 @@ buildscript {
     repositories {
         maven {
             url "http://artifactory:8081/artifactory/jcenter"
+            credentials {
+                username = 'admin'
+                password = 'qwerty123'
+            }
             allowInsecureProtocol = true
         }
     }
@@ -32,6 +36,10 @@ buildscript {
 repositories {
     maven {
         url "http://artifactory:8081/artifactory/jcenter"
+        credentials {
+            username = 'admin'
+            password = 'qwerty123'
+        }
         allowInsecureProtocol = true
     }
 }
